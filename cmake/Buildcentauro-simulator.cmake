@@ -4,11 +4,11 @@ include(FindOrBuildPackage)
 
 ycm_ep_helper(  centauro-simulator
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY centauro-simulator-control/centauro-simulator.git
-                TAG xbot_control
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/centauro-simulator.git
+                TAG xbot_control_devel
                 COMPONENT robots
                 DEPENDS
                 BUILD_COMMAND ""
 		INSTALL_COMMAND ""
-		)
+              )
