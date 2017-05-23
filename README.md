@@ -3,7 +3,7 @@ robotology-superbuild
 
 Robotology Superbuild
 
-Please take a look at the [wiki](https://github.com/robotology-playground/robotology-superbuild/wiki/robotology-superbuild-handbook#installation) for installation instructions
+Please take a look at the [wiki](https://github.com/ADVRHumanoids/advr-superbuild/wiki) for installation instructions
 
 _________________________________________________
 To download and compile COGIMON related packages
