@@ -61,7 +61,7 @@ find_or_build_package_with_tag(XCM ON)
 # -------------------
 # Compile ADVR_shared
 # -------------------
-find_or_build_package_with_tag(ADVR_shared ON)
+find_or_build_package_with_tag(ADVR_shared OFF)
 
 # -------------------
 # Compile advr_humanoids_common_utils
