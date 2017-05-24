@@ -9,7 +9,7 @@ ycm_ep_helper(  XBotCoreModel
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/xbotcoremodel.git
-                TAG centauro_bonn_review_2016
+                TAG master
                 COMPONENT external
                 DEPENDS srdfdom_advr
 			XBotCore-interfaces
