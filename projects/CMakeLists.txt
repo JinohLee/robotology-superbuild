@@ -141,8 +141,6 @@ find_or_build_package_with_tag(pilot_interface OFF)
 find_or_build_package_with_tag(network OFF)
 
 
-# Compile TESTPROJECTGIUSEPPE
-find_or_build_package_with_tag(TestProjectGiuseppe OFF)
 
 
 # --------------------------------------
