@@ -1,14 +1,14 @@
-# comanapp
-#include(YCMEPHelper)
-#include(FindOrBuildPackage)
+# test_peppe
+include(YCMEPHelper)
+include(FindOrBuildPackage)
 
-#find_or_build_package(YARP QUIET)
+find_or_build_package(XCM QUIET)
 
-#ycm_ep_helper(  comanapp
-#                TYPE GIT
-#                STYLE GITHUB
-#                REPOSITORY ADVRHumanoids/comanapp.git
-#                TAG master
-#                COMPONENT robots
-#                DEPENDS YARP
- #           )
+ycm_ep_helper(  test_peppe
+                TYPE GIT
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/TestProjectGiuseppe.git
+                TAG master
+                COMPONENT external
+                DEPENDS XCM
+            )
