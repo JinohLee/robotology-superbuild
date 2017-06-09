@@ -59,6 +59,6 @@ set(ADVR_shared_TAG 2d9a1c018eb4a)
 #set(GazeboXBotPlugin_TAG cca4168f6b9d2c227dae7)
 
 # Robots
-set(iit-bigman-ros-pkg_TAG 2b9e47b18f24e0)
+#set(iit-bigman-ros-pkg_TAG 2b9e47b18f24e0)
 #set(centauro-simulator_TAG bc52885a985ce750f)
 
