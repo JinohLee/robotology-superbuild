@@ -2,8 +2,7 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XBotInterface QUIET)
-find_or_build_package(XBotCore-interfaces QUIET)
+find_or_build_package(XCM QUIET)
 
 ycm_ep_helper(  RobotInterfaceXBotRT
                 TYPE GIT
@@ -11,6 +10,5 @@ ycm_ep_helper(  RobotInterfaceXBotRT
                 REPOSITORY ADVRHumanoids/RobotInterfaceXBotRT.git
                 TAG master
                 COMPONENT external
-		DEPENDS XBotInterface
-                        XBotCore-interfaces
+		DEPENDS XCM
              )

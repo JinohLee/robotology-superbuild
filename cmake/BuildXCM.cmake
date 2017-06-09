@@ -3,8 +3,6 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotInterface QUIET)
-find_or_build_package(XBotCore-interfaces QUIET)
-
 find_or_build_package(RobotInterfaceROS QUIET)
 
 ycm_ep_helper(  XCM
@@ -14,7 +12,6 @@ ycm_ep_helper(  XCM
                 TAG master
                 COMPONENT external
 		DEPENDS XBotInterface
-			XBotCore-interfaces
 			RobotInterfaceROS
 		CMAKE_CACHE_ARGS -DBUILD_examples:BOOL=ON
              )
