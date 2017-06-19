@@ -66,11 +66,6 @@ find_or_build_package_with_tag(simple_homing OFF)
 find_or_build_package_with_tag(testQPsolvers OFF)
 
 # --------------------------------------
-# Compile trajectory_utils - OFF by default
-# --------------------------------------
-find_or_build_package_with_tag(trajectory_utils OFF)
-
-# --------------------------------------
 # Compile vigir_footstep_planning_msgs - OFF by default
 # --------------------------------------
 #find_or_build_package_with_tag(vigir_footstep_planning_msgs OFF)

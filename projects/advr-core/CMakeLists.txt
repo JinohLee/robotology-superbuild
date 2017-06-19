@@ -110,3 +110,8 @@ find_or_build_package_with_tag(OpenSoT-lite OFF)
 # ----------------
 find_or_build_package_with_tag(MiscellaneousPlugins ON)
 
+# --------------------------------------
+# Compile trajectory_utils - OFF by default
+# --------------------------------------
+find_or_build_package_with_tag(trajectory_utils ON)
+
