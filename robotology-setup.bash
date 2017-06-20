@@ -43,13 +43,13 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        fi
        export LD_LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LD_LIBRARY_PATH
        export LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LIBRARY_PATH
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/ocl  
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/plugins  
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/rtt_ros  
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/types
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/ocl  
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/plugins  
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/rtt_ros  
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/types
 
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/rtt_sensor_msgs
-       pathadd RTT_COMPONENT_PATH /opt/ros/indigo/lib/orocos/gnulinux/rtt_std_msgs
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/rtt_sensor_msgs
+       pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/rtt_std_msgs
 
        pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos
 
@@ -112,7 +112,7 @@ pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/site-packages
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/dist-packages
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/external/OpenSoT/python/interfaces/yarp
 pathadd PKG_CONFIG_PATH $ROBOTOLOGY_ROOT/build/install/lib/pkgconfig
-pathadd GAZEBO_PLUGIN_PATH /opt/ros/indigo/lib
+pathadd GAZEBO_PLUGIN_PATH /opt/ros/${ROS_DISTRO}/lib
 pathadd GAZEBO_PLUGIN_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg/coman_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/icub_gazebo
