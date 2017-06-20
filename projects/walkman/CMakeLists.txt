@@ -56,3 +56,7 @@ find_or_build_package_with_tag(custom_sensor_msgs OFF)
 # --------------------------------------
 find_or_build_package_with_tag(walkman_final_demo_field OFF)
 
+# --------------------------------------
+# Compile Hose_Task
+# --------------------------------------
+find_or_build_package_with_tag(Hose_Task OFF)
