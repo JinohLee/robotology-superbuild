@@ -120,3 +120,8 @@ find_or_build_package_with_tag(trajectory_utils ON)
 # --------------------------------------
 find_or_build_package_with_tag(ADVR_ROS ON)
 
+# --------------------------------------
+# Compile ManipulationPlugin
+# --------------------------------------
+find_or_build_package_with_tag(ManipulationPlugin ON)
+
