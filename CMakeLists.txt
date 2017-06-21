@@ -81,8 +81,8 @@ set(YNL_HYDRA_TOKYO_UNIVERSITY OFF CACHE BOOL "Enable the download and usages of
 set(ADVR-CORE OFF CACHE BOOL "Enable the download and usages of ADVR core packages")
 # CENTAURO EU Project 
 set(CENTAURO_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CENTAURO project")
-# WALKMAN-ROS
-set(WALKMAN-ROS OFF CACHE BOOL "Enable the download and usages of walkman-ros packages")
+# CENTAURO EU Project 
+set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to the PHOLUS project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # DEPRECATED packages 
@@ -119,11 +119,11 @@ IF(CENTAURO_EU)
 ENDIF(CENTAURO_EU)
 
 # --------------------------------------
-# Compile related WALKMAN-ROS packages
+# Compile related PHOLUS packages
 # --------------------------------------
-IF(WALKMAN-ROS)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/walkman-ros/CMakeLists.txt)
-ENDIF(WALKMAN-ROS)
+IF(PHOLUS)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/pholus/CMakeLists.txt)
+ENDIF(PHOLUS)
 
 # --------------------------------------
 # Compile related COGIMON packages
@@ -167,3 +167,6 @@ set_package_properties(PkgConfig PROPERTIES TYPE RUNTIME)
 set_package_properties(Doxygen PROPERTIES TYPE RUNTIME)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+
+#YCM_WRITE_DOT_FILE(ADVR-YCM.dot)

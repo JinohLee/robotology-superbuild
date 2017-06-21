@@ -33,6 +33,10 @@ find_or_build_package_with_tag(chengxu_walking OFF)
 find_or_build_package_with_tag(Juan_FBcontrollers OFF)
 find_or_build_package_with_tag(yw_walking OFF)
 
+# Compile TESTPROJECTGIUSEPPE
+find_or_build_package_with_tag(TestProjectGiuseppe OFF)
+
+
 # --------------------------------------
 # Compile ReactiveWalk
 # --------------------------------------
@@ -52,3 +56,7 @@ find_or_build_package_with_tag(custom_sensor_msgs OFF)
 # --------------------------------------
 find_or_build_package_with_tag(walkman_final_demo_field OFF)
 
+# --------------------------------------
+# Compile Hose_Task
+# --------------------------------------
+find_or_build_package_with_tag(Hose_Task OFF)

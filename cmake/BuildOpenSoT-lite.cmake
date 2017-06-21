@@ -3,7 +3,6 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotInterface QUIET)
-find_or_build_package(advr_humanoids_common_utils QUIET)
 
 # Workaround to use qpOASES that does not have an install target or cmake config
 # files.
@@ -18,8 +17,8 @@ endif()
 ycm_ep_helper(  OpenSoT-lite TYPE GIT
                 STYLE GITHUB
                 REPOSITORY robotology-playground/OpenSoT.git
-                TAG lite
+                TAG v2.0
                 COMPONENT external
-                DEPENDS XBotInterface advr_humanoids_common_utils
+                DEPENDS XBotInterface 
                 CMAKE_CACHE_ARGS -DOPENSOT_COMPILE_TESTS:BOOL=OFF
             )

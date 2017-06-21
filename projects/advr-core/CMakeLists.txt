@@ -61,7 +61,7 @@ find_or_build_package_with_tag(XCM ON)
 # -------------------
 # Compile ADVR_shared
 # -------------------
-find_or_build_package_with_tag(ADVR_shared ON)
+find_or_build_package_with_tag(ADVR_shared OFF)
 
 # -------------------
 # Compile advr_humanoids_common_utils
@@ -86,11 +86,6 @@ endif(SUPERBUILD_XBotCore)
 find_or_build_package_with_tag(GazeboXBotPlugin ON)
 
 # ----------------
-# Compile XBotCore-interfaces
-# ----------------
-find_or_build_package_with_tag(XBotCore-interfaces ON)
-
-# ----------------
 # Compile EtherCAT_tools
 # ----------------
 find_or_build_package_with_tag(EtherCAT_tools OFF)
@@ -111,7 +106,22 @@ find_or_build_package_with_tag(XBotGUI OFF)
 find_or_build_package_with_tag(OpenSoT-lite OFF)
 
 # ----------------
-# Compile OpenSoT-lite
+# Compile MiscellaneousPlugins
 # ----------------
 find_or_build_package_with_tag(MiscellaneousPlugins ON)
+
+# --------------------------------------
+# Compile trajectory_utils
+# --------------------------------------
+find_or_build_package_with_tag(trajectory_utils ON)
+
+# --------------------------------------
+# Compile ADVR_ROS
+# --------------------------------------
+find_or_build_package_with_tag(ADVR_ROS ON)
+
+# --------------------------------------
+# Compile ManipulationPlugin
+# --------------------------------------
+find_or_build_package_with_tag(ManipulationPlugin ON)
 

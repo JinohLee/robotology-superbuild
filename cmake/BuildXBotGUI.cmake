@@ -7,8 +7,8 @@ find_or_build_package(XBotInterface QUIET)
 
 ycm_ep_helper(  XBotGUI
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY asettimi/xbotgui.git
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/XBotGUI.git
                 TAG master
                 COMPONENT external
                 DEPENDS XBotCoreModel

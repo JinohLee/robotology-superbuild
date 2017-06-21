@@ -1,18 +1,16 @@
-# XBotInterface
+# Hose_Task
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotCoreModel QUIET)
-find_or_build_package(sharedlibpp QUIET)
-find_or_build_package(bprinter QUIET)
+find_or_build_package(XBotInterface QUIET)
 
-ycm_ep_helper(  XBotInterface
+ycm_ep_helper(  Hose_Task
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/XBotInterface.git
+                REPOSITORY ADVRHumanoids/Hose_Task.git
                 TAG master
                 COMPONENT external
                 DEPENDS XBotCoreModel
-			sharedlibpp
-			bprinter
+			XBotInterface
              )

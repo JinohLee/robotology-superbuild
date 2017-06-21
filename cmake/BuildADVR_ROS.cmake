@@ -1,14 +1,15 @@
-# GazeboXBotPlugin
+# ADVR_ROS
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XCM QUIET)
+find_or_build_package(trajectory_utils QUIET)
 
-ycm_ep_helper(  GazeboXBotPlugin
+ycm_ep_helper(  ADVR_ROS
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/GazeboXBotPlugin.git
+                REPOSITORY ADVRHumanoids/ADVR_ROS.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+		DEPENDS trajectory_utils
+
              )
