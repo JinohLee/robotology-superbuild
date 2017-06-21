@@ -3,7 +3,7 @@
 sudo apt-get update
 
 # essential
-sudo apt-get install git cmake cmake-curses-gui build-essential gitg git-gui meld vim terminator mercurial libmatio-dev
+sudo apt-get install git cmake cmake-curses-gui build-essential gitg git-gui meld vim terminator mercurial libmatio-dev doxygen
 
 # ROS list and key
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -22,15 +22,22 @@ if [ "`lsb_release -cs`" = 'trusty' ]; then
 	
 	#find a proper way to check the current cmake version
 	#if [ "`cmake --version`"  != '3.5.1' ]; then
-		sh ./get_cmake_3_5_1.sh
-	#fi
+	sh ./get_cmake_3_5_1.sh
+	cp FindEigen3.cmake /usr/local/share/cmake-3.5/Modules # fix Eigen3 not found on external project
+        #fi
 fi
 
 if [ "`lsb_release -cs`" = 'xenial' ]; then
         sudo apt-get install ros-kinetic-desktop-full
 	sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface
         sudo apt-get install ros-kinetic-gazebo-ros-pkgs
+
 fi
+
+# dependency from iit-bigman-ros-package
+sudo apt-get install python-pip
+sudo pip install BeautifulSoup4 lxml 
+
 
 # ROS config
 sudo rosdep init

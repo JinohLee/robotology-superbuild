@@ -29,6 +29,10 @@ find_or_build_package_with_tag(segway_v3_robot OFF)
 find_or_build_package_with_tag(segway_v3_desktop OFF)
 find_or_build_package_with_tag(segway_v3_simulator OFF)
 
+find_or_build_package_with_tag(chengxu_walking OFF)
+find_or_build_package_with_tag(Juan_FBcontrollers OFF)
+find_or_build_package_with_tag(yw_walking OFF)
+
 # --------------------------------------
 # Compile ReactiveWalk
 # --------------------------------------
@@ -42,4 +46,9 @@ find_or_build_package_with_tag(reactive_walking OFF)
 find_or_build_package_with_tag(SensorsPublisher OFF)
 
 find_or_build_package_with_tag(custom_sensor_msgs OFF)
+
+# --------------------------------------
+# Compile walkman_final_demo_field
+# --------------------------------------
+find_or_build_package_with_tag(walkman_final_demo_field OFF)
 
